@@ -48,7 +48,8 @@ cat ./-
 *Flag1: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx*
 
 # level 2
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/4b7b35d5-2a26-4a92-ab34-e3c5e49dbb89)
+<img width="613" height="242" alt="image" src="https://github.com/user-attachments/assets/514d6600-4727-497b-bd52-fbc036a8997f" />
+
 
 - với level 2 ta kết nối ssh và sử dụng ls -l và check được file spaces in this filename tượng tự với level trên thì ta sử dụng
 
@@ -62,11 +63,13 @@ cat + ( nhấn nút tab )
 ```
 - để xem thông tin bên trong thư mục , tab sử dụng để tự động hoàn thành 1 câu hoàn chỉnh
 
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/86205dca-9bd4-4571-8a49-fd31d12cd268)
-*Flag2:aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG*
+<img width="948" height="136" alt="image" src="https://github.com/user-attachments/assets/5d5bba4d-d384-444d-94a3-8ebaa2389344" />
+
+*Flag2: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx*
 
 # level 3: 
-<img width="411" alt="image-8" src="https://github.com/j10nelop/ehc_challenge/assets/152776722/302633f7-cd7a-4305-acad-53f5e1edecea">
+<img width="606" height="236" alt="image" src="https://github.com/user-attachments/assets/0afa1090-77cb-4619-81bc-ee15c56ac735" />
+
 
 -  sử dụng lệnh ls  để xem nội dung của thư mục hiện tại và xác định được thư mục inhere/
 -  sử dụng lệnh ls -la inhere/ để xem toàn bộ file thư mục bên trong bao gồm .hidden file
@@ -76,56 +79,65 @@ ls -la inhere
 ```
 - sử dụng cat để xem nội dung bên trong
   
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/b5f5d280-a499-493b-8c91-1f30315641ce)
+<img width="957" height="165" alt="image" src="https://github.com/user-attachments/assets/203b653f-e5ba-4dec-9ac6-0ea8446876ba" />
 
-*flag3:2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe*
+
+*flag3: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ*
   
 # level 4:
 
-<img width="796" alt="image-10" src="https://github.com/j10nelop/ehc_challenge/assets/152776722/a96f3b0e-5191-44f1-9bc7-e53a416008e5">
+<img width="623" height="255" alt="image" src="https://github.com/user-attachments/assets/4f2df385-022b-44de-be74-dfe80835c0d6" />
+
 
 - để tìm tệp có định dạng xác định có thể đọc được cho con người ta sử dụng lệnh file để check nội dung định dạng của các tệp
 - sau khi tìm được định dạng file ta sử dụng cat để check thông tin
 
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/1692d97a-2483-4f3c-a86c-a6233925875e)
+<img width="932" height="251" alt="image" src="https://github.com/user-attachments/assets/85712bc8-033e-4340-b867-dda1cacd04d6" />
+
 - vậy là ta tìm được 1 tệp ascii text  
-*flag4:lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR*
+*flag4: oyv4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw*
 
 # level 5:
 
-<img width="647" alt="image-13" src="https://github.com/j10nelop/ehc_challenge/assets/152776722/7b534f07-3f74-45a4-821d-a60599372b40">
+<img width="606" height="314" alt="image" src="https://github.com/user-attachments/assets/45532758-72e0-4db0-b4c0-2916da8fd93e" />
+
 
 - trong thư mục inhere có chứa nhiều thư mục chứa file password để tìm file thì dựa trên hint là size và kiểu  type f 
 - ta có lệnh find để tìm file cần biết (type f file ) và ( -size 1033c) combine lại ta có 
 
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/20715d3c-3f9e-4315-b6e4-ef78817ba5fb)
+<img width="931" height="206" alt="image" src="https://github.com/user-attachments/assets/59addef0-6d39-40df-b94f-231ee601da3d" />
 
-*flag5:P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU*
+
+*flag5: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG*
 
 # level 6:
 
-<img width="539" alt="image-15" src="https://github.com/j10nelop/ehc_challenge/assets/152776722/cc209a28-615b-4d52-86d7-860c99c18d6c">
+<img width="610" height="332" alt="image" src="https://github.com/user-attachments/assets/33213afb-2e1f-44a7-a366-415bf6377da7" />
+
 
 - với dạng này ta sẽ tìm file dựa vào  gợi ý 33 byte, user bandit7 , group bandit6
 
 
 ```python
-find / -type f -user bandit7 -group  bandit6 2>/dev/null 
+find / -type f -user bandit7 -group  bandit6 -size 33c  2>/dev/null 
 ```
 Command Explanation
 -  /: tim kiếm toàn bộ server ( / là thư mục root)
 -  -type : kiểu đây f ( file)
 - user : owned là user bandit7
 - group : thuộc group  bandit6
+- size : 33byte
 - 2>/dev/null: là bộ lọc loại bỏ những thông báo error
 
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/8e820065-a655-4ee1-94c6-bcbb6033cc0a)
+<img width="938" height="141" alt="image" src="https://github.com/user-attachments/assets/2d505788-3236-4f28-8f17-3c119634f833" />
 
-*flag6:z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S*
+
+*flag6: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj*
 
 
 # level 7
-<img width="443" alt="image-17" src="https://github.com/j10nelop/ehc_challenge/assets/152776722/685ef4a1-06b0-41de-9c34-e7259ce78a63">
+<img width="609" height="234" alt="image" src="https://github.com/user-attachments/assets/a9fbb664-a015-4a58-82aa-e28c7188c659" />
+
 
 - check list file ta thấy file data.txt có từ khóa là millionth sau đó ta sẽ dùng câu lệnh 
 
@@ -136,13 +148,14 @@ Command Explanation
 - grep: bộ lọc trỏ đến vị trí cụ thể 
 - | : hoặc câu lệnh kép
 
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/43e18c02-f4bf-42d8-98be-1f7d5a8fdb82)
+<img width="749" height="236" alt="image" src="https://github.com/user-attachments/assets/18a06dbe-44b0-41a3-9996-a2f384c43c0c" />
 
-*flag7:TESKZC0XvTetK0S9xNwm25STk5iWrBvP*
+*flag7: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc*
 
 
 # level 8
-<img width="556" alt="image-19" src="https://github.com/j10nelop/ehc_challenge/assets/152776722/eff1f089-5b75-4ca3-be03-e6a7a12d23ca">
+<img width="598" height="231" alt="image" src="https://github.com/user-attachments/assets/c47cf63b-1c18-49ee-b60f-de062f6b56a5" />
+
 - ls check ta được file data.txt với yêu cầu tìm ra dòng văn bản duy nhất xuất hiện một :
 - sử dụng cat check được các kí tự của các text đang bị đảo => sắp xếp để tìm ra dòng password duy nhất :
 
@@ -153,12 +166,14 @@ Command Explanation
 - sort : sử dụng để sắp xếp các kí tự theo trình tự
 - uniq -u : uniq và -u (unique) chọn ra line khác biệt duy nhất 
 
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/d3d1c55d-504e-4237-9d14-10fb09aca15b)
+<img width="567" height="86" alt="image" src="https://github.com/user-attachments/assets/cb31a8db-6ff5-4d48-9bcb-d9d7c17bc063" />
 
-*flag8:EN632PlfYiZbn3PhVK3XOGSlNInNE00t*
+
+*flag8: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM*
 
 # level 9
-<img width="697" alt="image-21" src="https://github.com/j10nelop/ehc_challenge/assets/152776722/a8e29451-3bfb-4678-a74d-8f1d4da99b24">
+<img width="612" height="230" alt="image" src="https://github.com/user-attachments/assets/72637a6a-19b0-4444-90df-900eb447c1b5" />
+
 
 - The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
 
@@ -168,16 +183,15 @@ Command Explanation
 - strings : lọc kí tự có thể đọc
 - grep : lọc các kí tự đã được filter "=" theo đề 
 
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/b4d77740-6bba-4e08-865a-bf0273e6a083)
+<img width="605" height="369" alt="image" src="https://github.com/user-attachments/assets/1d76d13b-d1d0-4ab3-a18f-acc3a21b4bc1" />
 
 
-*flag9:G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s*
-
-
+*flag9:FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey*
 
 
 # level 10
-<img width="502" alt="image-23" src="https://github.com/j10nelop/ehc_challenge/assets/152776722/5855f0ca-140c-4b95-85ac-1eb442c01ec5">
+<img width="593" height="232" alt="image" src="https://github.com/user-attachments/assets/16cf6c64-6b1d-41b6-b92f-b20a0c52a2cc" />
+
 
 - The password for the next level is stored in the file data.txt, which contains base64 encoded data
 
@@ -189,10 +203,12 @@ Command Explanation
 
 base64 -d : decrypt giải mã 
 
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/9e3ca7bc-fc85-4a04-99e7-c685b7ac909f)
+<img width="937" height="190" alt="image" src="https://github.com/user-attachments/assets/e589e8fe-aa42-4ae3-a3f7-7671a91f7bc3" />
+- hoặc
+<img width="939" height="129" alt="image" src="https://github.com/user-attachments/assets/40fd158b-824b-4d34-8c94-1100209cc1db" />
 
 
-*flag10:6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM*
+*flag10: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr*
 
 
 # level 11
@@ -209,7 +225,7 @@ base64 -d : decrypt giải mã
 
 ![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/4d585687-c540-4d88-a0ff-0e2f51d45361)
 
-*flag11:JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv*
+*The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4*
 
 # level 12
 

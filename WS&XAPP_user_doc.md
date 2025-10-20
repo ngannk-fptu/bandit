@@ -33,3 +33,23 @@ Trước hết mở PHP storm thì ta sẽ sử dụng chức năng folder và  
 - B1 : Vào trong folder /xampp/php và đánh lệnh sau “.\php -i “ trên cmd sau khi đánh lệnh này thì ta sẽ có được thông tin về phiên bản php được cài đặt
 - B2 : Vào link sau   https://xdebug.org/wizard để lấy được link download (làm theo hướng dẫn ở link https://viblo.asia/p/toi-da-debug-code-php-nhu-nao-RnB5pWA7lPG)
 - B3 : Sau khi xdebug đã được tải xuống và lưu tại `C:/xampp/php/ext` ta chỉnh file php.ini để cài đặt
+
+
+# **Lưu ý  **
+Ta thường đi tìm lỗi của plugin và folder chứa plugin nằm ở 
+
+```python
+/wordpress/wp-content/plugins
+```
+
+# **Cách cài đặt Plugins  **
+tải đúng phiên bản về → giải nén ném vào 
+
+```python
+C:\xampp\htdocs\wordpress\wp-content\plugins
+```
+
+đăng nhập tài khoản wp
+check plugins đã active chưa 
+
+DEGBUG THUI

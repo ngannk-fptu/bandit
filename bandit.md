@@ -4,7 +4,8 @@
 
 # level 0 
 
-<img width="1037" alt="image-2" src="https://github.com/j10nelop/ehc_challenge/assets/152776722/9f4ee81e-8def-45c8-a044-a5e39597e2f5">
+<img width="948" height="313" alt="image" src="https://github.com/user-attachments/assets/baa58ed7-8c17-48da-a4da-926a53cc2978" />
+
 
 - kết nối ssh:
 ```python

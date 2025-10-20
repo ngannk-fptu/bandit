@@ -4,7 +4,8 @@
 
 # level 0 
 
-<img width="948" height="313" alt="image" src="https://github.com/user-attachments/assets/baa58ed7-8c17-48da-a4da-926a53cc2978" />
+<img width="714" height="324" alt="image" src="https://github.com/user-attachments/assets/c089977d-88bf-432d-a969-e6457acd27cf" />
+
 
 
 - kết nối ssh:
@@ -22,13 +23,14 @@ ls
 cat readme
 ```
 
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/ae1eda8f-dbc1-43d4-95b7-3ed7ff5ac6e3)
+<img width="948" height="313" alt="image" src="https://github.com/user-attachments/assets/7f16fa72-5d36-4034-9e63-e6639517e148" />
 
-*Flag0: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL*
+*Flag0: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If*
 
 # level 1 
 
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/aba7ae29-2089-4dbe-ac41-923acb23605f)
+<img width="618" height="289" alt="image" src="https://github.com/user-attachments/assets/cb5e30a4-d035-43bd-b472-9a5ae026b1af" />
+
 
 
 -tương tự kêt nối ssh đến user:bandit1 và password: flag0, đầu tiên ta cần sử dụng lệnh ls -l 
@@ -39,10 +41,11 @@ liệt kê kiểu file thuộc dir or f rồi sử dụng cat để check thông
 ```python
 cat ./- 
 ```
-![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/2e23e838-59e8-43b2-8700-db0400932f17)
+<img width="947" height="193" alt="image" src="https://github.com/user-attachments/assets/390bfbd3-967e-4190-82f7-24435b571828" />
 
 
-*Flag1:rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi*
+
+*Flag1: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx*
 
 # level 2
 ![image](https://github.com/j10nelop/ehc_challenge/assets/152776722/4b7b35d5-2a26-4a92-ab34-e3c5e49dbb89)
